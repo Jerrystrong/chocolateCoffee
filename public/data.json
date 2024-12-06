@@ -1,0 +1,44 @@
+[
+    {
+        "id":"1",
+        "title":"Cafe froid",
+        "procedure":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos commodi eveniet minus tempora cumque minima velit quia fuga, perferendis doloremque molestias consequatur facilis incidunt id enim blanditiis corrupti nostrum illum illo numquam culpa rerum sequi voluptatem voluptatum. Neque illum vel hic voluptatum totam laborum temporibus sequi quidem optio. Corrupti magni molestiae possimus hic nostrum facilis ad consequatur veritatis corporis cum numquam saepe doloremque, quisquam, veniam quasi suscipit mollitia architecto iure sint, accusantium ratione labore aperiam! Odio, sapiente eius ullam blanditiis nesciunt voluptatibus dicta. Quos assumenda corporis quibusdam maxime quidem, odio dicta? Odio, repellat? Blanditiis dicta qui magnam fuga quia. Qui",
+        "bannerImage":  "coffeetass1.jpg",
+         "author":{
+            "name":"DnewFlye",
+            "profil":"user1.webp",
+            "feed":{
+                "like":2,
+                "unlike":0
+            }
+        }
+    },
+    {
+        "id":"2",
+        "title":"Cafe froid",
+        "procedure":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos commodi eveniet minus tempora cumque minima velit quia fuga, perferendis doloremque molestias consequatur facilis incidunt id enim blanditiis corrupti nostrum illum illo numquam culpa rerum sequi voluptatem voluptatum. Neque illum vel hic voluptatum totam laborum temporibus sequi quidem optio. Corrupti magni molestiae possimus hic nostrum facilis ad consequatur veritatis corporis cum numquam saepe doloremque, quisquam, veniam quasi suscipit mollitia architecto iure sint, accusantium ratione labore aperiam! Odio, sapiente eius ullam blanditiis nesciunt voluptatibus dicta. Quos assumenda corporis quibusdam maxime quidem, odio dicta? Odio, repellat? Blanditiis dicta qui magnam fuga quia. Qui",
+        "bannerImage":  "coffeetass2.avif",
+         "author":{
+            "name":"Chief Buffer",
+            "profil":"Bimuala.jpg",
+            "feed":{
+                "like":2,
+                "unlike":1
+            }
+        }
+    },
+    {
+        "id":"3",
+        "title":"Cafe froid",
+        "procedure":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos commodi eveniet minus tempora cumque minima velit quia fuga, perferendis doloremque molestias consequatur facilis incidunt id enim blanditiis corrupti nostrum illum illo numquam culpa rerum sequi voluptatem voluptatum. Neque illum vel hic voluptatum totam laborum temporibus sequi quidem optio. Corrupti magni molestiae possimus hic nostrum facilis ad consequatur veritatis corporis cum numquam saepe doloremque, quisquam, veniam quasi suscipit mollitia architecto iure sint, accusantium ratione labore aperiam! Odio, sapiente eius ullam blanditiis nesciunt voluptatibus dicta. Quos assumenda corporis quibusdam maxime quidem, odio dicta? Odio, repellat? Blanditiis dicta qui magnam fuga quia. Qui",
+        "bannerImage":  "coffeetass3.avif",
+        "author":{
+            "name":"Chief Buffer",
+            "profil":"karl.jpg",
+            "feed":{
+                "like":0,
+                "unlike":1
+            }
+        }
+    }
+]
