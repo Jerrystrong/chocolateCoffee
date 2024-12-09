@@ -2,6 +2,7 @@
 import CommentIcon from '@/components/icons/commentIcon.vue';
 import LeftIcon from '@/components/icons/leftIcon.vue';
 import LikeIcon from '@/components/icons/likeIcon.vue';
+import SendComment from '@/components/icons/sendComment.vue';
 import UnlikeIcon from '@/components/icons/unlikeIcon.vue';
 import ViewerIcon from '@/components/icons/viewerIcon.vue';
 import { onMounted, ref, watch } from 'vue';
@@ -94,7 +95,14 @@ watch(()=>route.params.id,async (newValue)=>{
                     <p>{{ commente.text }}</p>
                     <p>{{ commente.date }}</p>
                 </div>
+                <div class="bg-primary/30 p-2 rounded-md">
+                    <label for="">Write your commentaire</label>
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="3" class="w-full focus:outline-dashed rounded-lg focus:outline-primary focus:outline-[2px]"></textarea>
+                <button class="bg-secondary px-2 py-[8px] rounded-lg h-fit mr-3 flex text-white items-center justify-between gap-1">Send <SendComment/></button>
+
+                </div>
             </div>
+           
         </div>
     </div>
 </template>
