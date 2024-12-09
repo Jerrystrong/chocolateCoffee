@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import homeView from '../views/homeView.vue'
+import SiglePost from '@/views/siglePost.vue'
+import NotFoundView from '@/views/notFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +16,16 @@ const router = createRouter({
       name: 'login',
       component: ()=> import('../views/loginView.vue')
     },
+    {
+      path: '/post/:id',
+      name: 'siglePost',
+      component: SiglePost
+    },
+    {
+      path:'/:anything(.*)',
+      name:'notFound',
+      component:NotFoundView
+    }
     // {
     //   path: '/about',
     //   name: 'about',

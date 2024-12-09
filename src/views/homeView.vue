@@ -1,6 +1,7 @@
 <script setup>
     import allRecette from '../components/allRecette.vue'
     import { computed, onMounted, ref, useTemplateRef } from 'vue';
+    import footerComponentVue from '../components/footerComponent.vue';
 
     const allPost=ref(null)
     // all templateRefs
@@ -21,24 +22,28 @@
         computed(()=> vid.value.play())
         // vid.value.play()
     })
+    // input animation border
     const removeAnim=()=>{
         span.value.classList.remove('borderAnim')
         span.value.classList.add('hidden')
     }
+    // adding user response
     const addRespond=(mess)=>{
         ownInstantRespond.value.push(mess)
         whatInput.value.value=''
     }
+    // showing that user is writing
     const inputRespond=()=>{
         isWriting.value=!isWriting.value
     }
 </script>
 <template>
     <div>
-        <div class=" w-vw h-[calc(100dvh-100px)] bg-1 flex items-center justify-center flex-col">
+        <div class="bg-white rounded-b-[100px] -z-50">
+            <div class=" w-vw h-[calc(100dvh-100px)] bg-1 flex items-center justify-center flex-col">
             <!-- <div class="absolute w-100 h-100 backImage left-0"></div> -->
             <h1 class="text-[64px] text-primary font1 m-2 md:m-0 text-center">The way to coffee like a chief</h1>
-            <p class="text-[24px] w-[70%] text-center">Here are some collections of the coffee cooking methods and thechnique that you can implemente in your daily journey</p>
+            <p class="text-[24px] md:w-[70%] w-[90%] text-center">Here are some collections of the coffee cooking methods and techniques that you can implemente in your daily journey</p>
             <div class="w-[200px]">
                 <img src="/coffeeTasse.png" alt="">
             </div>
@@ -65,9 +70,9 @@
                <allRecette :data="allPost" class="my-4"/> 
              </div>
         </div>
-
+        <!-- donate section -->
         <div class="mx-5 my-10 m md:m-10 flex flex-col md:flex-row relative">
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col gap-3  z-50">
                 <h2  class="font1 text-[42px] text-white md:text-black md:text-left text-center">
                     Support the coffee communauty with 5$ and follows our youtube channel
                 </h2>
@@ -77,12 +82,13 @@
                     <a href="https://www.youtube.com" class="py-1 px-3 w-fit bg-red-700/60 shadow-lg shadow-red-700/50 rounded-xl text-white font-bold  hover:scale-95 transition duration-300 ">Follow our youtube channel</a>
                </div>
             </div>
-            <div class="bg-black md:rounded-l-full overflow-hidden border-[5px] border-primary/50 md:relative absolute md:top-0 -top-2 -bottom-2 -left-2 -right-2 md:right-0 lg:left-0 md:bottom-0 -z-50 md:z-50 brightness-50 opacity-90">
+            <div class="bg-black md:rounded-l-full overflow-hidden border-[5px] border-primary/50 md:relative absolute md:top-0 -top-2 -bottom-2 -left-2 -right-2 md:right-0 lg:left-0 md:bottom-0 z-10 md:z-50 brightness-50 opacity-90 ">
                 <video src="/vid1.mp4" autoplay loop class="w-full h-full object-cover" ref="vid"></video>
             </div>
         </div>
 
-        <div class="relative grid lg:grid-cols-2 md:grid-cols-1 h-screen">
+        <!-- let in touch section -->
+        <div class="relative grid lg:grid-cols-2 md:grid-cols-1 lg:h-screen h-fit md:overflow-visible overflow-hidden md:my-10 mt-10 bg-transparent">
             <div class="flex flex-col justify-center items-end">
                 <div class=" lg:h-[60%] lg:w-[90%] m-auto h-[100%] w-[90%] rounded-2xl relative overflow-hidden bac-1">
                     <div class="ml-5 flex flex-col gap-2">
@@ -104,8 +110,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col justify-center lg:-translate-y-[0%] md:-translate-y-[20%] -translate-y-[20%] md:overflow-auto overflow-hidden">
-                <div class="bg-black/80 w-[90%] md:h-[80%] md:w-[86%] lg:w-[90%] rounded-2xl relative overflow-hidden flex flex-col m-auto">
+            <div class="flex flex-col justify-center lg:-translate-y-[0%] md:-translate-y-[20%] -translate-y-[20%] md:overflow-auto overflow-hidden md:mb-0 my-6">
+                <div class="bg-black/80 w-[90%] md:h-[100%] lg:h-[80%] md:w-[86%] lg:w-[90%] rounded-2xl relative overflow-hidden flex flex-col m-auto">
                     <div class="absolute w-100 h-100 backPattern top-0 left-0 z-30"></div>
                     <h2 class="text-[42px] lg:self-end self-start md:m-5 mx-5 my-2 text-white font1 flex flex-col">
                         <span>In one time</span>
@@ -123,7 +129,8 @@
                 </div>
             </div>
             <!-- phone design -->
-            <div class="absolute rotate-12 lg:left-1/3 backPhone z-50 md:left-[50%] md:block hidden">
+            <div class="absolute rotate-12 lg:left-1/3 backPhone z-50 md:left-[50%] md:block md:top-0 
+            top-[85%]">
                <div class="my-10 mx-2  h-[75%] flex flex-col relative">
                     <div class="px-1 py-[8px] mx-1 w-[80%] backwhat self-end cursor-pointer hover:scale-95 transition duration-300">
                         Hello there,thanks for submission
@@ -136,7 +143,8 @@
                     </div>
 
                     <!-- render dynamique user responde -->
-                    <div v-if="ownInstantRespond.length>0" class="mt-2">
+                    <transition name="fadeAnime">
+                        <div v-if="ownInstantRespond.length>0" class="mt-2">
                         <div class=" mt-1 px-1 py-[8px] mx-1 w-[80%] bg-white rounded-lg self-end cursor-pointer hover:scale-95 transition duration-300" v-for="(respond,index) in ownInstantRespond" :key="index">
                         {{ respond }}
                         </div>
@@ -144,6 +152,7 @@
                     <div v-else>
                         <div v-if="isWriting" class="text-sm m-2 text-slate-500">You are writting ...</div>
                     </div>
+                    </transition>
 
                     <div class="flex justify-between gap-[3px] absolute bottom-0 w-100 box-border">
                         <div class="bg-white w-[100%] rounded-full flex items-center pl-2">
@@ -161,9 +170,51 @@
 
             </div>
         </div>
+
+        </div>
+
+        <!-- footer -->
+         <div class="w-100 h-[70dvh] backDesigne pt-6 lg:pt-5">
+            <!-- <div class="absolute top-0 left-0 backPattern"></div> -->
+            <footerComponentVue class="footerLink"/>
+            <div class="footerTitle absolute -bottom-1 md:-bottom-3 w-full flex md:justify-between md:flex-row flex-col">
+                <div class="flex items-center gap-3">
+                    <h2 class=" text-white font1 md:text-[52px] text-32 m-0">Chocolate Coffee</h2>
+                    <p class="text-creme m-0 text-[8px] md:text-8">Developped with ❤️ copyright {{ new Date().getFullYear() }}</p>
+                </div>  
+                <button class="bg-secondary px-2 py-[8px] rounded-lg h-fit mr-3 hidden md:block text-white">Donate 👌</button>
+            </div>
+            
+         </div>
     </div>
 </template>
 <style scoped>
+/* vue transition */
+    .fadeAnime-enter-active,.fadeAnime-leave-active{
+        transition: all 0.3s ease-out;
+    }
+    .fadeAnime-enter-from,.fadeAnime-leave-to{
+        opacity: 0;
+        /* transform: translateY(100px); */
+    }
+    .fadeAnime-enter-from{
+        transform: translateY(-10px);
+    }
+/*  */
+.backDesigne>.footerLink{
+    z-index: 55555555555 !important;
+}
+.backDesigne{
+    background-image: url(/pattern.png), linear-gradient(#393737, #1b1b1b);
+    background-position: 0 0, 0 0;
+    background-size: 80px 80px, auto;   
+    margin-top: -64px;
+    /* padding-top: 50px; */
+    position: sticky;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -55555;
+}
 .bac-1{
     background: #c6af9ed7;
 }

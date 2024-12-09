@@ -4,12 +4,26 @@
         "title":"Cafe froid",
         "procedure":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos commodi eveniet minus tempora cumque minima velit quia fuga, perferendis doloremque molestias consequatur facilis incidunt id enim blanditiis corrupti nostrum illum illo numquam culpa rerum sequi voluptatem voluptatum. Neque illum vel hic voluptatum totam laborum temporibus sequi quidem optio. Corrupti magni molestiae possimus hic nostrum facilis ad consequatur veritatis corporis cum numquam saepe doloremque, quisquam, veniam quasi suscipit mollitia architecto iure sint, accusantium ratione labore aperiam! Odio, sapiente eius ullam blanditiis nesciunt voluptatibus dicta. Quos assumenda corporis quibusdam maxime quidem, odio dicta? Odio, repellat? Blanditiis dicta qui magnam fuga quia. Qui",
         "bannerImage":  "coffeetass1.jpg",
+        "date":"Lundi,12/11/2024",
          "author":{
             "name":"DnewFlye",
             "profil":"user1.webp",
             "feed":{
                 "like":2,
-                "unlike":0
+                "unlike":0,
+                "viewer":10,
+                "commente":{
+                    "number":2,
+                    "message":[
+                        {
+                            "text":"Thank you so mutch coach",
+                            "date":"Mardi, 18/11/2024"
+                        },
+                        {"text":"Thank you so mutch coach",
+                            "date":"Mardi, 18/11/2024"
+                        }
+                    ]
+                }
             }
         }
     },
@@ -18,12 +32,28 @@
         "title":"Cafe froid",
         "procedure":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos commodi eveniet minus tempora cumque minima velit quia fuga, perferendis doloremque molestias consequatur facilis incidunt id enim blanditiis corrupti nostrum illum illo numquam culpa rerum sequi voluptatem voluptatum. Neque illum vel hic voluptatum totam laborum temporibus sequi quidem optio. Corrupti magni molestiae possimus hic nostrum facilis ad consequatur veritatis corporis cum numquam saepe doloremque, quisquam, veniam quasi suscipit mollitia architecto iure sint, accusantium ratione labore aperiam! Odio, sapiente eius ullam blanditiis nesciunt voluptatibus dicta. Quos assumenda corporis quibusdam maxime quidem, odio dicta? Odio, repellat? Blanditiis dicta qui magnam fuga quia. Qui",
         "bannerImage":  "coffeetass2.avif",
+        "date":"Lundi,12/11/2024",
          "author":{
             "name":"Chief Buffer",
             "profil":"Bimuala.jpg",
             "feed":{
                 "like":2,
-                "unlike":1
+                "unlike":1,
+                "commente":{
+                    "number":3,
+                    "message":[
+                        {
+                            "text":"Thank you so mutch coach",
+                            "date":"Mardi, 18/11/2024"
+                        },
+                        {"text":"Thank you so mutch coach",
+                            "date":"Mardi, 18/11/2024"
+                        },
+                        {"text":"Thank you so mutch bro",
+                            "date":"Mardi, 18/11/2024"
+                        }
+                    ]
+                }
             }
         }
     },
@@ -32,12 +62,25 @@
         "title":"Cafe froid",
         "procedure":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos commodi eveniet minus tempora cumque minima velit quia fuga, perferendis doloremque molestias consequatur facilis incidunt id enim blanditiis corrupti nostrum illum illo numquam culpa rerum sequi voluptatem voluptatum. Neque illum vel hic voluptatum totam laborum temporibus sequi quidem optio. Corrupti magni molestiae possimus hic nostrum facilis ad consequatur veritatis corporis cum numquam saepe doloremque, quisquam, veniam quasi suscipit mollitia architecto iure sint, accusantium ratione labore aperiam! Odio, sapiente eius ullam blanditiis nesciunt voluptatibus dicta. Quos assumenda corporis quibusdam maxime quidem, odio dicta? Odio, repellat? Blanditiis dicta qui magnam fuga quia. Qui",
         "bannerImage":  "coffeetass3.avif",
+        "date":"Lundi,12/11/2024",
         "author":{
             "name":"Chief Buffer",
             "profil":"karl.jpg",
             "feed":{
                 "like":0,
-                "unlike":1
+                "unlike":1,
+                "commente":{
+                    "number":2,
+                    "message":[
+                        {
+                            "text":"Thank you so mutch coach",
+                            "date":"Mardi, 18/11/2024"
+                        },
+                        {"text":"Thank you so mutch coach",
+                            "date":"Mardi, 18/11/2024"
+                        }
+                    ]
+                }    
             }
         }
     }

@@ -20,7 +20,11 @@ export default {
       colors:{
         'primary':'#7b593a',
         'secondary':'#075E54 '
-      }
+      },
+    fontSize:{
+      '8':'18px',
+      '32':'32px'
+    }
     }
   },
   plugins: []
