@@ -42,7 +42,7 @@
         <div class="bg-white rounded-b-[100px] -z-50">
             <div class=" w-vw h-[calc(100dvh-100px)] bg-1 flex items-center justify-center flex-col">
             <!-- <div class="absolute w-100 h-100 backImage left-0"></div> -->
-            <h1 class="text-[64px] text-primary font1 m-2 md:m-0 text-center">The way to coffee like a chief</h1>
+            <h1 class="md:text-[64px] text-[42px] text-primary font1 m-2 md:m-0 text-center">The way to coffee like a chief</h1>
             <p class="text-[24px] md:w-[70%] w-[90%] text-center">Here are some collections of the coffee cooking methods and techniques that you can implemente in your daily journey</p>
             <div class="w-[200px]">
                 <img src="/coffeeTasse.png" alt="">

@@ -1,10 +1,10 @@
 <template>
-    <div class="w-full h-[80vh] flex justify-center items-center">
-        <div class="bg-primary/45 w-11/12 md:h-[80%] h-fit rounded-xl grid grid-cols-2 overflow-hidden gap-1">
+    <div class="w-full h-[80vh] flex justify-center md:items-center items-center">
+        <div class="bg-primary/45 md:w-11/12 w-[80%] md:h-[80%] h-fit rounded-xl grid grid-cols-2 overflow-hidden gap-1">
             <div class="md:block hidden">
                 <img src="/coffeetass1.jpg" alt="coffee-icon" class="w-full h-full object-cover">
             </div>
-            <div class="md:p-1 p-2">
+            <div class="p-1">
                 <h1 class="md:text-[32px] text-[24px] font1 md:text-left text-center">Contact Page</h1>
 
                 <form action="" class="m-2 grid gap-1">

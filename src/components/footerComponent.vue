@@ -22,11 +22,13 @@ import XIcon from './icons/xIcon.vue';
             </div>
 
             <div class="flex flex-col links text-creme font1">
-                <h2 class="pb-3 font-bold text-[24px]">Social links</h2>
-                <a href="" class="flex items-center gap-1"><InstagramIcon/> Intagram</a>
-                <a href="" class="flex items-center gap-1"><FacebookIcon/> Facebook</a>
-                <a href="" class="flex items-center gap-1"><XIcon/> X</a>
+                <h2 class="md:pb-3 pb-0 font-bold text-[24px]">Social links</h2>
+                <div class="flex md:flex-col flex-row md:gap-0 gap-1">
+                    <a href="" class="flex items-center gap-1"><InstagramIcon /> <span class="md:block hidden">Intagram</span></a>
+                <a href="" class="flex items-center gap-1"><FacebookIcon/> <span class="md:block hidden">Facebook</span></a>
+                <a href="" class="flex items-center gap-1"><XIcon/> <span class="md:block hidden">X</span></a>
                 <a href="" class="flex items-center gap-1">Whatsapp</a>
+                </div>
                 
             </div>
         </div>
