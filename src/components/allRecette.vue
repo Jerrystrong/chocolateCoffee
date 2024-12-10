@@ -1,6 +1,6 @@
 <template>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-5  cursor-pointer lg:gap-2 gap-5">
-        <div v-for="(recette,index) in data" :key="index" class="w-[100%] lg:w-[80%] md:w-[80%] bac-1 shadow-lg shadow-primary/50 rounded-xl border-1 relative hover:scale-105 transition duration-300">
+        <div v-for="(recette,index) in data" :key="index" class="w-[100%] lg:w-[80%] md:w-[100%] bac-1 shadow-lg shadow-primary/50 rounded-xl border-1 relative hover:scale-105 transition duration-300">
             <div class="absolute w-100 -top-1 -left-1 -bottom-1 border  border-1 -z-50 rounded-l-xl"></div>
                 <div class="w-[100%] h-[200px] overflow-hidden rounded-t-xl">
                     <img :src="recette.bannerImage" alt="" class="w-[100%] h-[100%] object-cover brightness-50 hover:brightness-100 hover:scale-105 cursor-pointer transition duration-300 rounded-t-xl">

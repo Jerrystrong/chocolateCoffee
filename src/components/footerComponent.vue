@@ -1,6 +1,9 @@
 <script setup>
-// import { RouterView, RouterLink } from 'vue-router';
+import FacebookIcon from './icons/facebookIcon.vue';
+import InstagramIcon from './icons/instagramIcon.vue';
+import XIcon from './icons/xIcon.vue';
 
+// import { RouterView, RouterLink } from 'vue-router';
 </script>
 <template>
     <div class="container z-50 absolute">
@@ -10,7 +13,7 @@
                         <img src="/coffeetass1.jpg" alt="" class="w-100 h-100 object-cover">
                 </div>
             </div>
-            <div class="flex flex-col footer-nav text-creme">
+            <div class="flex flex-col footer-nav text-creme font1">
                 <h2 class="pb-3 font-bold text-[24px]">Navigate</h2>
                 <router-link to="/" class="text-8 cursor-pointer hover:text-32 transition duration-300"><span>About</span></router-link>
                 <router-link to="/" class="text-8 cursor-pointer hover:text-32 transition duration-300">Ressources</router-link>
@@ -18,11 +21,12 @@
                 <router-link to="/" class="text-8 cursor-pointer hover:text-32 transition duration-300">Connection</router-link>
             </div>
 
-            <div class="flex flex-col links text-creme">
+            <div class="flex flex-col links text-creme font1">
                 <h2 class="pb-3 font-bold text-[24px]">Social links</h2>
-                <a href="">Facebook</a>
-                <a href="">X</a>
-                <a href="">Whatsapp</a>
+                <a href="" class="flex items-center gap-1"><InstagramIcon/> Intagram</a>
+                <a href="" class="flex items-center gap-1"><FacebookIcon/> Facebook</a>
+                <a href="" class="flex items-center gap-1"><XIcon/> X</a>
+                <a href="" class="flex items-center gap-1">Whatsapp</a>
                 
             </div>
         </div>

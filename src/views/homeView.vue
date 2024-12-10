@@ -51,15 +51,15 @@
         </div>
         <div id="allrecette" class="mx-5 my-10 m md:m-10 ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <h2 class="text-[42px] color1 font1">Discover all the coffee recetttes and coffee like a chief</h2>
+                <h2 class="md:text-[42px] text-[32px] color1 font1">Discover all the coffee recetttes and coffee like a chief</h2>
                 <div class="flex w-100 md:justify-center gap-3 ">
-                    <div class="w-[100px] h-[100px] rotate-12 rounded-lg flex items-center justify-center border-1 shadow-2xl hover:rotate-2 transition duration-300 cursor-pointer">
+                    <div class="w-[100px] md:h-[100px] h-[80px] rotate-12 rounded-lg flex items-center justify-center border-1 shadow-2xl hover:rotate-2 transition duration-300 cursor-pointer">
                         <img src="/coffeetass1.jpg" alt="" class="w-100 h-100 object-cover">
                     </div>
-                    <div class="w-[100px] h-[100px] rotate-12 -translate-x- rounded-lg flex items-center justify-center border-1 shadow-lg hover:rotate-2 transition duration-300 cursor-pointer">
+                    <div class="w-[100px]  md:h-[100px] h-[80px] rotate-12 -translate-x- rounded-lg flex items-center justify-center border-1 shadow-lg hover:rotate-2 transition duration-300 cursor-pointer">
                         <img src="/coffeetass2.avif" alt="" class="w-100 h-100 object-cover">
                     </div>
-                    <div class="w-[100px] h-[100px] rotate-12 rounded-lg flex items-center justify-center border-1 hover:rotate-2 transition duration-300 cursor-pointer">
+                    <div class="w-[100px]  md:h-[100px] h-[80px] rotate-12 rounded-lg flex items-center justify-center border-1 hover:rotate-2 transition duration-300 cursor-pointer">
                         <img src="/coffeetass3.avif" alt="" class="w-100 h-100 object-cover">
                     </div>
                 </div>
@@ -73,7 +73,7 @@
         <!-- donate section -->
         <div class="mx-5 my-10 m md:m-10 flex flex-col md:flex-row relative">
             <div class="flex flex-col gap-3  z-50">
-                <h2  class="font1 text-[42px] text-white md:text-black md:text-left text-center">
+                <h2  class="font1 md:text-[42px] text-[32px] text-white md:text-black md:text-left text-center">
                     Support the coffee communauty with 5$ and follows our youtube channel
                 </h2>
 
@@ -91,9 +91,9 @@
         <div class="relative grid lg:grid-cols-2 md:grid-cols-1 lg:h-screen h-fit md:overflow-visible overflow-hidden md:my-10 mt-10 bg-transparent">
             <div class="flex flex-col justify-center items-end">
                 <div class=" lg:h-[60%] lg:w-[90%] m-auto h-[100%] w-[90%] rounded-2xl relative overflow-hidden bac-1">
-                    <div class="ml-5 flex flex-col gap-2">
+                    <div class="md:ml-5 ml-2 flex flex-col gap-2">
                         <div>
-                            <h2 class="font1 text-[42px]">Let get in touch</h2>
+                            <h2 class="font1 md:text-[42px] text-[32px]">Let get in touch</h2>
                             <small>leave us a message </small>
                         </div>
                         <form action="" class="grid gap-1">
@@ -121,7 +121,7 @@
                         Follow our new letter to be aware of all new feature in our blog.
                     </p>
                     <div class="lg:self-end self-start">
-                        <form action="" class="w-fit bg-white md:m-2 mx-4 my-1 h-[40px] rounded-full flex items-center p-2">
+                        <form action="" class="w-fit bg-white mx-2 my-1 h-[40px] rounded-full flex items-center p-2">
                             <input type="email" placeholder="Your email" class="bg-transparent placeholder:text-slate-700 z-40 focus:outline-none">
                             <button type="submit" class="bg-black text-white py-[5px] px-1 rounded-full hover:scale-95 z-40 font-bold font1 transition duration-200">Submit</button>
                         </form>

@@ -22,6 +22,11 @@ const router = createRouter({
       component: SiglePost
     },
     {
+      path: '/contact/',
+      name: 'contact',
+      component: ()=> import('../views/contactView.vue')
+    },
+    {
       path:'/:anything(.*)',
       name:'notFound',
       component:NotFoundView

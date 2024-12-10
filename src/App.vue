@@ -23,8 +23,8 @@ const toggleMenu=()=>{
       <nav class="flex gap-2">
         <RouterLink to="/">Home</RouterLink>
         <router-link to="" class="hover:text-primary transition-all">About</router-link>
-        <router-link to="" class="hover:text-primary transition-all">Ressource</router-link>
-        <router-link to="" class="hover:text-primary transition-all">Contact</router-link>
+        <router-link to="/contact/" class="hover:text-primary transition-all">Ressource</router-link>
+        <router-link to="/connexion/" class="hover:text-primary transition-all">Contact</router-link>
       </nav>
     </div>
   </div>
@@ -41,9 +41,9 @@ const toggleMenu=()=>{
           <img alt="Vue logo" src="/logo.png" class="w-[150px]"/>
           <nav class="flex gap-2 flex-col">
             <RouterLink to="/" class="text-[32px] hover:text-primary transition-all text-primary">Home</RouterLink>
-            <a href="" class=" hover:text-primary transition-all hover:text-[32px]">About</a>
-            <a href="" class="hover:text-primary transition-all  hover:text-[32px]">Ressource</a>
-            <a href="" class="hover:text-primary transition-all  hover:text-[32px]">Contact</a>
+            <RouterLink to="" class=" hover:text-primary transition-all hover:text-[32px]">About</RouterLink>
+            <RouterLink to="/contact/" class="hover:text-primary transition-all  hover:text-[32px]">Ressource</RouterLink>
+            <RouterLink to="/contact/" class="hover:text-primary transition-all  hover:text-[32px]">Contact</RouterLink>
           <router-link to="/login" class="bac-t-2 p-[8px] px-3 rounded-lg w-fit">Connection</router-link>
           </nav>
         </div>
