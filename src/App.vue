@@ -22,9 +22,9 @@ const toggleMenu=()=>{
 
       <nav class="flex gap-2">
         <RouterLink to="/">Home</RouterLink>
-        <router-link to="" class="hover:text-primary transition-all">About</router-link>
-        <router-link to="/contact/" class="hover:text-primary transition-all">Ressource</router-link>
-        <router-link to="/connexion/" class="hover:text-primary transition-all">Contact</router-link>
+        <router-link to="/about/" class="hover:text-primary transition-all">About</router-link>
+        <router-link to="/ressources/" class="hover:text-primary transition-all">Ressources</router-link>
+        <router-link to="/contact/" class="hover:text-primary transition-all">Contact</router-link>
       </nav>
     </div>
   </div>
@@ -41,10 +41,10 @@ const toggleMenu=()=>{
           <img alt="Vue logo" src="/logo.png" class="w-[150px]"/>
           <nav class="flex gap-2 flex-col">
             <RouterLink to="/" class="text-[32px] hover:text-primary transition-all text-primary">Home</RouterLink>
-            <RouterLink to="" class=" hover:text-primary transition-all hover:text-[32px]">About</RouterLink>
-            <RouterLink to="/contact/" class="hover:text-primary transition-all  hover:text-[32px]">Ressource</RouterLink>
+            <RouterLink to="/about/" class=" hover:text-primary transition-all hover:text-[32px]">About</RouterLink>
+            <RouterLink to="/ressources/" class="hover:text-primary transition-all  hover:text-[32px]">Ressources</RouterLink>
             <RouterLink to="/contact/" class="hover:text-primary transition-all  hover:text-[32px]">Contact</RouterLink>
-          <router-link to="/login" class="bac-t-2 p-[8px] px-3 rounded-lg w-fit">Connection</router-link>
+            <router-link to="/login" class="bac-t-2 p-[8px] px-3 rounded-lg w-fit">Connection</router-link>
           </nav>
         </div>
       </div>
@@ -54,6 +54,10 @@ const toggleMenu=()=>{
 </template>
 
 <style scoped>
+/* focus link effect */
+.router-link-active{
+  color:#7b593a;
+}
 .bac-t{
   background: #d2691e3b;
   /* background: #542401; */

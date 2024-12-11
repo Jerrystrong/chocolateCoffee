@@ -13,6 +13,21 @@
 .bac-1{
   background: #c6af9ed7;
 }
+/*  */
+.backDesigne>.footerLink{
+  z-index: 55555555555 !important;
+}
+.backDesigne{
+  background-image: url(/pattern.png), linear-gradient(#393737, #1b1b1b);
+  background-position: 0 0, 0 0;
+  background-size: 80px 80px, auto;   
+  margin-top: -64px;
+  /* padding-top: 50px; */
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -55555;
+}
 
 /* #app {
   max-width: 1280px;

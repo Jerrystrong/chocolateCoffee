@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-[80vh] flex justify-center md:items-center items-center">
-        <div class="bg-primary/45 md:w-11/12 w-[80%] md:h-[80%] h-fit rounded-xl grid grid-cols-2 overflow-hidden gap-1">
+        <div class="bg-primary/45 md:w-[60%] w-[80%] md:h-[80%] h-fit rounded-xl grid md:grid-cols-2 overflow-hidden gap-1">
             <div class="md:block hidden">
                 <img src="/coffeetass1.jpg" alt="coffee-icon" class="w-full h-full object-cover">
             </div>
@@ -8,12 +8,12 @@
                 <h1 class="md:text-[32px] text-[24px] font1 md:text-left text-center">Contact Page</h1>
 
                 <form action="" class="m-2 grid gap-1">
-                    <div class="form-group border w-fit grid px-1 py-[5px] border-primary rounded-lg bac-1">
+                    <div class="form-group border w-full grid px-1 py-[5px] border-primary rounded-lg bac-1">
                         <label for="" class="text-sm text-slate-700">Email</label>
                         <input type="email" placeholder="ecrivez votre email" class="bg-transparent text-slate-700 placeholder:text-slate-700 focus:outline-none">
                     </div>
 
-                    <div class="form-group border w-fit grid px-1 py-[5px] border-primary rounded-lg bac-1">
+                    <div class="form-group border w-full grid px-1 py-[5px] border-primary rounded-lg bac-1">
                         <label for="" class="text-sm text-slate-700">Email</label>
                         <textarea name="" id="" cols="30" rows="2" class="bg-transparent text-slate-700 placeholder:text-slate-700 focus:outline-none">Write your message</textarea>
                     </div>

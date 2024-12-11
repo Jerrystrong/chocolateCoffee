@@ -39,6 +39,7 @@
             "feed":{
                 "like":2,
                 "unlike":1,
+                "viewer":20,
                 "commente":{
                     "number":3,
                     "message":[
@@ -69,6 +70,7 @@
             "feed":{
                 "like":0,
                 "unlike":1,
+                "viewer":1,
                 "commente":{
                     "number":2,
                     "message":[

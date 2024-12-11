@@ -60,10 +60,10 @@ watch(()=>route.params.id,async (newValue)=>{
                     {{ post.procedure }}
                 </div>
                 <div class="flex gap-[10px] mt-3">
-                    <div class="flex items-center gap-[5px] text-blue-700 font1"><LikeIcon/> {{ post.author?.feed?.like }}</div>
-                    <div class="flex items-center gap-[5px] text-red-700 font1"><unlikeIcon/> {{ post.author?.feed?.unlike }}</div>
-                    <div class="flex items-center gap-[5px] text-yellow-700 font1"><CommentIcon/> {{ post.author?.feed?.commente?.number }}</div>
-                    <div class="flex items-center gap-[5px] text-yellow-500 font1"><ViewerIcon/> {{ post.author?.feed?.viewer }}</div>
+                    <div class="flex items-center gap-[5px] text-blue-700 font1 cursor-pointer hover:scale-110 transition duration-300 delay-300"><LikeIcon class=""/> {{ post.author?.feed?.like }}</div>
+                    <div class="flex items-center gap-[5px] text-red-700 font1 cursor-pointer hover:scale-110 transition duration-300 delay-300"><unlikeIcon/> {{ post.author?.feed?.unlike }}</div>
+                    <div class="flex items-center gap-[5px] text-yellow-700 fon1  cursor-pointer hover:scale-110 transition duration-300 delay-300"><CommentIcon/> {{ post.author?.feed?.commente?.number }}</div>
+                    <div class="flex items-center gap-[5px] text-yellow-500 fon1  cursor-pointer hover:scale-110 transition duration-300 delay-300"><ViewerIcon/> {{ post.author?.feed?.viewer }}</div>
                     
                 </div>
                     
@@ -91,9 +91,13 @@ watch(()=>route.params.id,async (newValue)=>{
 
             <div class="commentaire grid gap-[10px]">
                 <p class="my-2 font-bold">Commentaires</p>
-                <div v-for="(commente,index) in post.author?.feed?.commente?.message" :key="index" class="bg-primary/30 p-2 rounded-md">
+                <div v-for="(commente,index) in post.author?.feed?.commente?.message" :key="index" class="bg-primary/30 p-2 rounded-md cursor-pointer hover:bg-primary/50 transition duration-300">
                     <p>{{ commente.text }}</p>
                     <p>{{ commente.date }}</p>
+                    <div class="flex gap-[10px]">
+                        <div class="flex items-center gap-[5px] text-blue-700 font1 cursor-pointer hover:scale-110 transition duration-300 delay-300"><LikeIcon/>0</div>
+                        <div class="flex items-center gap-[5px] text-red-700 font1 cursor-pointer hover:scale-110 transition duration-300 delay-300"><unlikeIcon/> 0</div>
+                    </div>
                 </div>
                 <div class="bg-primary/30 p-2 rounded-md">
                     <label for="">Write your commentaire</label>

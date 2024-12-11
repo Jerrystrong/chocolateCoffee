@@ -27,6 +27,11 @@ const router = createRouter({
       component: ()=> import('../views/contactView.vue')
     },
     {
+      path: '/ressources/',
+      name: 'ressources',
+      component: ()=> import('../views/ressourcesView.vue')
+    },
+    {
       path:'/:anything(.*)',
       name:'notFound',
       component:NotFoundView
