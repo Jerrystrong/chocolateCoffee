@@ -4,7 +4,7 @@
             <div class="md:block hidden">
                 <img src="/coffeetass1.jpg" alt="coffee-icon" class="w-full h-full object-cover">
             </div>
-            <div class="p-1">
+            <div class="py-1">
                 <h1 class="md:text-[32px] text-[24px] font1 md:text-left text-center">Contact Page</h1>
 
                 <form action="" class="m-2 grid gap-1">
