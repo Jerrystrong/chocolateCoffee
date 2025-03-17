@@ -1,35 +1,18 @@
-# vue-project
+## Chocolate Coffee app
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a blog were people can find recette of their favorite coffee and publish their own recetete so that people can implement it to their house.
 
-## Recommended IDE Setup
+## App link
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[chocolateCoffee](https://chocolatecooffee.netlify.app/)
 
-## Customize configuration
+## Stack
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+-VueJs;
+-TailwindCss;
+-Javascript;
+-Node;
+-CSS
 
 ## Project Setup
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
